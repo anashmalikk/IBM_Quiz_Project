@@ -1,0 +1,10 @@
+[
+  {"id":"html","label":"HTML","icon":"📄","color":"#E6600D","desc":"Semantic structure, forms, and document basics"},
+  {"id":"css","label":"CSS","icon":"🎨","color":"#8E44AD","desc":"Selectors, layout, responsive design, and visual styling"},
+  {"id":"javascript","label":"JavaScript","icon":"⚙️","color":"#F0AB00","desc":"Core language, browser APIs, functions, and async basics"},
+  {"id":"react","label":"React","icon":"⚛️","color":"#0092D1","desc":"Components, props, state, effects, and rendering concepts"},
+  {"id":"ui5","label":"SAPUI5, SAP Fiori & OData","icon":"🧩","color":"#0065BD","desc":"SAPUI5 controls, MVC, OData query options, and bindings"},
+  {"id":"workflow","label":"Workflow & Event Mesh","icon":"🔄","color":"#c0392b","desc":"Workflow Service, Event Mesh, Business Rules, and process automation"},
+  {"id":"btp","label":"SAP BTP","icon":"☁️","color":"#8E44AD","desc":"SAP Business Technology Platform accounts, services, and security"},
+  {"id":"cap","label":"CAP","icon":"🏗️","color":"#107E3E","desc":"Cloud Application Programming model basics"}
+]

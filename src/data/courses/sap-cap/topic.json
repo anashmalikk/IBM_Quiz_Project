@@ -1,0 +1,4 @@
+[
+  {"id":"cds","label":"CDS","icon":"📐","color":"#107E3E","desc":"Entities, associations, projections, and annotations"},
+  {"id":"services","label":"CAP Services","icon":"🔌","color":"#2C3E50","desc":"Service definitions, events, handlers, and APIs"}
+]

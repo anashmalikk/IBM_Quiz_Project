@@ -1,0 +1,5 @@
+[
+  {"id":"syntax","label":"ABAP Syntax","icon":"⌨️","color":"#0A6ED1","desc":"Variables, loops, internal tables, and database reads"},
+  {"id":"oop","label":"Object-Oriented ABAP","icon":"🧱","color":"#107E3E","desc":"Classes, methods, interfaces, and inheritance"},
+  {"id":"dictionary","label":"ABAP Dictionary","icon":"🗃️","color":"#2C3E50","desc":"Tables, domains, data elements, and structures"}
+]

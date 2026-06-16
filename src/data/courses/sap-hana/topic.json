@@ -1,0 +1,107 @@
+[
+  {
+    "id": "bw_foundations",
+    "label": "BW Foundations & Architecture",
+    "icon": "🏛️",
+    "color": "#0065BD",
+    "desc": "ERP, Data Warehousing, BW Architecture, Star Schema, LSA and LSA++"
+  },
+  {
+    "id": "bw_modeling",
+    "label": "BW Data Modeling",
+    "icon": "🗂️",
+    "color": "#107E3E",
+    "desc": "InfoAreas, InfoCatalogs, InfoObjects, Attributes, Hierarchies, Key Figures"
+  },
+  {
+    "id": "master_data",
+    "label": "Master Data Management",
+    "icon": "📚",
+    "color": "#8E44AD",
+    "desc": "Master Data Modeling, Characteristic InfoObjects, Data Loading and Maintenance"
+  },
+  {
+    "id": "data_acquisition",
+    "label": "Data Acquisition & ETL",
+    "icon": "🔄",
+    "color": "#E6600D",
+    "desc": "Datasource, PSA, InfoPackage, Transformations, DTP, Error Handling and Data Flows"
+  },
+  {
+    "id": "infoproviders",
+    "label": "InfoProviders & Data Warehousing",
+    "icon": "🏗️",
+    "color": "#C0392B",
+    "desc": "DSO, ADSO, InfoCube, Virtual Provider, MultiProvider and InfoSets"
+  },
+  {
+    "id": "bw_administration",
+    "label": "BW Administration & Performance",
+    "icon": "⚙️",
+    "color": "#16A085",
+    "desc": "Aggregates, Indexes, Partitioning, Compression, Remodeling and Monitoring"
+  },
+  {
+    "id": "abap_bw",
+    "label": "ABAP for BW",
+    "icon": "💻",
+    "color": "#34495E",
+    "desc": "ABAP Basics, SQL, Transformations, Start/End Routines, Expert Routines and Enhancements"
+  },
+  {
+    "id": "data_extraction",
+    "label": "SAP Extraction & Delta Management",
+    "icon": "📤",
+    "color": "#D35400",
+    "desc": "ECC Extraction, Generic Extraction, LO Cockpit, Delta Queue and Update Modes"
+  },
+  {
+    "id": "bw_reporting",
+    "label": "BEx Reporting & Query Design",
+    "icon": "📊",
+    "color": "#2980B9",
+    "desc": "BEx Query Designer, Structures, Variables, Exceptions, Conditions and Reporting"
+  },
+  {
+    "id": "query_optimization",
+    "label": "Query Optimization & Security",
+    "icon": "🚀",
+    "color": "#27AE60",
+    "desc": "Query Performance, Read Modes, Query Management and Authorizations"
+  },
+  {
+    "id": "hana_modeling",
+    "label": "SAP HANA Modeling",
+    "icon": "🧠",
+    "color": "#9B59B6",
+    "desc": "HANA Architecture, Row/Column Store, Calculation Views and Modeling"
+  },
+  {
+    "id": "bw4hana_modeling",
+    "label": "SAP BW/4HANA Modeling",
+    "icon": "🌐",
+    "color": "#1ABC9C",
+    "desc": "BW/4HANA Tools, ADSO, Composite Providers, Open ODS Views and LSA++"
+  },
+  {
+    "id": "data_provisioning",
+    "label": "Data Provisioning & Integration",
+    "icon": "🔌",
+    "color": "#F39C12",
+    "desc": "ODP, SDA, SDI, SLT Replication, Real-Time Data Integration"
+  },
+  {
+    "id": "hana_analytics",
+    "label": "HANA Analytics & S/4HANA",
+    "icon": "📈",
+    "color": "#E74C3C",
+    "desc": "Embedded Analytics, AMDP, S/4HANA Reporting and Analytics"
+  },
+  {
+    "id": "project_assessment",
+    "label": "Project Scenario & Assessment",
+    "icon": "🎯",
+    "color": "#2C3E50",
+    "desc": "End-to-End BW/4HANA Project Scenario, Review and Assessment"
+  }
+]

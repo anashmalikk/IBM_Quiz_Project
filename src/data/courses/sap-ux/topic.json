@@ -1,0 +1,44 @@
+[
+  {
+    "id": "ui5",
+    "label": "SAPUI5, SAP Fiori & OData",
+    "icon": "🎨",
+    "color": "#0065BD",
+    "desc": "OData query options, Fiori Elements templates, UI annotations, SAPUI5 controls, MVC pattern, extensions, testing with QUnit and OPA5"
+  },
+  {
+    "id": "js",
+    "label": "JavaScript, Node.js & DevOps",
+    "icon": "⚙️",
+    "color": "#1e8a2e",
+    "desc": "JavaScript fundamentals, Node.js, Git version control, CI/CD with SAP Continuous Integration and Delivery"
+  },
+  {
+    "id": "sap",
+    "label": "General SAP Practice",
+    "icon": "🏢",
+    "color": "#E6600D",
+    "desc": "SAP BTP concepts, Design Thinking, UX strategy, platform users, API Business Hub, mock server, Sinon.JS"
+  },
+  {
+    "id": "btp",
+    "label": "SAP BTP, CAP & Cloud",
+    "icon": "☁️",
+    "color": "#8e44ad",
+    "desc": "Cloud Application Programming model, Cloud Foundry, XSUAA security, SAP BAS dev spaces, MTA deployment, service catalog"
+  },
+  {
+    "id": "wf",
+    "label": "Workflow & Event Mesh",
+    "icon": "🔄",
+    "color": "#c0392b",
+    "desc": "SAP Workflow Service, Event Mesh, Business Rules, Process Visibility, Live Processes, BPMN elements"
+  },
+  {
+    "id": "fiq",
+    "label": "Final Questions",
+    "icon": "🎯",
+    "color": "#2c3e50",
+    "desc": "Mixed topics: CAP, SAPUI5, Fiori, BTP, OData, Node.js, Security, Workflow, CI/CD, Cloud Connector"
+  }
+]

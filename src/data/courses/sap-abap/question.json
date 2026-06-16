@@ -1,0 +1,11 @@
+[
+  {"t":"syntax","q":"Which keyword declares a variable in ABAP?","o":["DATA","PRINT","STYLE","FETCHCSS"],"a":[0],"m":false},
+  {"t":"syntax","q":"Which statement reads database rows?","o":["SELECT","COLOR","ROUTE","PAINT"],"a":[0],"m":false},
+  {"t":"syntax","q":"Which are ABAP basics?","o":["Internal tables","Loops","Variables","HTML tags only"],"a":[0,1,2],"m":true},
+  {"t":"oop","q":"Which keyword defines an ABAP class?","o":["CLASS","SCREEN","TABLEONLY","ROUTE"],"a":[0],"m":false},
+  {"t":"oop","q":"What does a method contain?","o":["Class behavior","Only colors","Database storage only","Static images"],"a":[0],"m":false},
+  {"t":"oop","q":"Which are OOP concepts?","o":["Class","Method","Interface","Printer tray"],"a":[0,1,2],"m":true},
+  {"t":"dictionary","q":"What does the ABAP Dictionary define?","o":["Data definitions","Page colors","Keyboard mappings","Network cables"],"a":[0],"m":false},
+  {"t":"dictionary","q":"What is a domain used for?","o":["Technical value attributes","Image size","Route color","Screen wallpaper"],"a":[0],"m":false},
+  {"t":"dictionary","q":"Which are dictionary objects?","o":["Tables","Data elements","Domains","CSS classes"],"a":[0,1,2],"m":true}
+]

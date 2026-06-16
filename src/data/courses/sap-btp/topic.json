@@ -1,0 +1,4 @@
+[
+  {"id":"foundations","label":"BTP Foundations","icon":"☁️","color":"#8E44AD","desc":"Accounts, subaccounts, entitlements, and services"},
+  {"id":"security","label":"BTP Security","icon":"🔐","color":"#107E3E","desc":"Authentication, authorization, roles, and XSUAA"}
+]

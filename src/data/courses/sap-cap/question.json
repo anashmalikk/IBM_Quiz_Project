@@ -1,0 +1,8 @@
+[
+  {"t":"cds","q":"What does CDS define in CAP?","o":["Domain models","Only colors","Keyboard shortcuts","Disk partitions"],"a":[0],"m":false},
+  {"t":"cds","q":"What is an entity?","o":["Modeled business data structure","Image filter","Log file","Network rule"],"a":[0],"m":false},
+  {"t":"cds","q":"Which are CDS concepts?","o":["Entities","Associations","Annotations","Wallpaper"],"a":[0,1,2],"m":true},
+  {"t":"services","q":"What does a CAP service expose?","o":["Entities and operations","Only images","System fonts","Printer queues"],"a":[0],"m":false},
+  {"t":"services","q":"What does an event handler implement?","o":["Custom business logic","Screen wallpaper","Cable routing","Image cropping"],"a":[0],"m":false},
+  {"t":"services","q":"Which belong to CAP services?","o":["Actions","Functions","Event handlers","Font files"],"a":[0,1,2],"m":true}
+]

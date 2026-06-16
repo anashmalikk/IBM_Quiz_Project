@@ -1,0 +1,4 @@
+[
+  {"id":"launchpad","label":"Fiori Launchpad","icon":"🚀","color":"#0092D1","desc":"Tiles, catalogs, spaces, pages, and app navigation"},
+  {"id":"elements","label":"Fiori Elements","icon":"📋","color":"#8E44AD","desc":"Metadata-driven list reports, object pages, and annotations"}
+]

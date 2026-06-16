@@ -1,0 +1,8 @@
+[
+  {"t":"foundations","q":"What is a BTP subaccount used for?","o":["Organizing apps and services","Drawing icons","Editing images","Formatting disks"],"a":[0],"m":false},
+  {"t":"foundations","q":"What are entitlements?","o":["Service usage rights","Fonts","Keyboard shortcuts","Log colors"],"a":[0],"m":false},
+  {"t":"foundations","q":"Which are BTP setup items?","o":["Subaccounts","Entitlements","Service instances","CSS resets"],"a":[0,1,2],"m":true},
+  {"t":"security","q":"What does XSUAA provide?","o":["Authentication and authorization","Image compression","CSS compilation","Keyboard input"],"a":[0],"m":false},
+  {"t":"security","q":"What does authorization decide?","o":["What a user can access","Monitor brightness","File icon shape","Network cable length"],"a":[0],"m":false},
+  {"t":"security","q":"Which support BTP security?","o":["Roles","Scopes","Trust configuration","Random secrets in code"],"a":[0,1,2],"m":true}
+]

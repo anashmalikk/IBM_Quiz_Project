@@ -1,0 +1,8 @@
+[
+  {"t":"launchpad","q":"What does SAP Fiori Launchpad provide?","o":["Central access point for apps","Database engine","ABAP debugger","Network switch"],"a":[0],"m":false},
+  {"t":"launchpad","q":"What is a catalog used for?","o":["Grouping launchable apps","Writing SQL","Debugging memory","Creating images"],"a":[0],"m":false},
+  {"t":"launchpad","q":"Which are launchpad concepts?","o":["Tiles","Spaces","Pages","Disk partitions"],"a":[0,1,2],"m":true},
+  {"t":"elements","q":"What drives Fiori Elements apps?","o":["Metadata and annotations","Manual canvas drawing","Printer drivers","BIOS config"],"a":[0],"m":false},
+  {"t":"elements","q":"Which floorplan shows object details?","o":["Object Page","Cable Page","Patch Page","Color Page"],"a":[0],"m":false},
+  {"t":"elements","q":"Which are Fiori Elements floorplans?","o":["List Report","Object Page","Overview Page","Disk Page"],"a":[0,1,2],"m":true}
+]
