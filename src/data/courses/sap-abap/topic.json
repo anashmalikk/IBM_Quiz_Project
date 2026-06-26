@@ -1,5 +1,86 @@
 [
-  {"id":"syntax","label":"ABAP Syntax","icon":"⌨️","color":"#0A6ED1","desc":"Variables, loops, internal tables, and database reads"},
-  {"id":"oop","label":"Object-Oriented ABAP","icon":"🧱","color":"#107E3E","desc":"Classes, methods, interfaces, and inheritance"},
-  {"id":"dictionary","label":"ABAP Dictionary","icon":"🗃️","color":"#2C3E50","desc":"Tables, domains, data elements, and structures"}
+    {
+        "id":  "abap_objects",
+        "label":  "ABAP Objects \u0026 Core ABAP",
+        "icon":  "🧱",
+        "color":  "#0065BD",
+        "desc":  "ABAP Objects, classes, constructors, internal concepts, memory, conversions, indexes, and core ABAP statements"
+    },
+    {
+        "id":  "hana",
+        "label":  "ABAP on SAP HANA",
+        "icon":  "🚀",
+        "color":  "#0A6ED1",
+        "desc":  "SAP HANA basics, CDS views, AMDP, Open SQL, code-to-data, HANA Studio, and migration checks"
+    },
+    {
+        "id":  "workbench_amdp",
+        "label":  "ABAP Workbench \u0026 AMDP",
+        "icon":  "🛠️",
+        "color":  "#5D36FF",
+        "desc":  "ABAP Workbench tools, repository objects, transports, function groups, BADIs, and AMDP development"
+    },
+    {
+        "id":  "data_transfer",
+        "label":  "Data Transfer",
+        "icon":  "🔁",
+        "color":  "#188918",
+        "desc":  "BDC, batch input sessions, LSMW, GUI upload, application server files, and data migration methods"
+    },
+    {
+        "id":  "data_dictionary",
+        "label":  "Data Dictionary",
+        "icon":  "🗃️",
+        "color":  "#E9730C",
+        "desc":  "SE11, database tables, domains, data elements, views, lock objects, search helps, indexes, and table settings"
+    },
+    {
+        "id":  "enhancements",
+        "label":  "Enhancements \u0026 BADIs",
+        "icon":  "⚙️",
+        "color":  "#C0399F",
+        "desc":  "Enhancement framework, implicit and explicit enhancement points, enhancement spots, BADIs, and implementations"
+    },
+    {
+        "id":  "forms",
+        "label":  "SAP Forms",
+        "icon":  "📄",
+        "color":  "#D04343",
+        "desc":  "SAPscript, Smart Forms, Adobe Forms, windows, output media, debugging, graphics, and form processing"
+    },
+    {
+        "id":  "internal_tables",
+        "label":  "Internal Tables",
+        "icon":  "📋",
+        "color":  "#07838F",
+        "desc":  "Internal table declarations, table types, sorting, deleting, field catalogs, ALV filters, and table operations"
+    },
+    {
+        "id":  "odata_fiori",
+        "label":  "OData, SAPUI5 \u0026 Fiori",
+        "icon":  "🌐",
+        "color":  "#0070F2",
+        "desc":  "OData services, Gateway, HTTP methods, annotations, CDS exposure, Fiori apps, Launchpad, and UI5 concepts"
+    },
+    {
+        "id":  "reporting_alv",
+        "label":  "Reporting \u0026 ALV",
+        "icon":  "📊",
+        "color":  "#6A6D70",
+        "desc":  "Classical reports, ALV grid, containers, events, variants, field catalogs, layout, and display methods"
+    },
+    {
+        "id":  "webdynpro",
+        "label":  "Web Dynpro ABAP",
+        "icon":  "🖥️",
+        "color":  "#925ACE",
+        "desc":  "Web Dynpro components, views, controllers, context binding, UI elements, layouts, plugs, and ALV integration"
+    },
+    {
+        "id":  "final",
+        "label":  "Final 150 Questions",
+        "icon":  "🎯",
+        "color":  "#107E3E",
+        "desc":  "Separate final ABAP 150-question mixed-topic practice set; duplicates are allowed only in this final topic"
+    }
 ]
