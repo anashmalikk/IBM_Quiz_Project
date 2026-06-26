@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { Navigate, useParams } from "react-router-dom";
+import { Navigate, useParams, useSearchParams } from "react-router-dom";
 import NavBar from "../components/NavBar.jsx";
 import ProgressBar from "../components/ProgressBar.jsx";
 import QuestionCard from "../components/QuestionCard.jsx";
@@ -8,17 +8,19 @@ import useQuiz from "../hooks/useQuiz.js";
 import { findCourse, findTopic } from "../services/courseLoader.js";
 
 export default function Quiz() {
-  const { courseId, topicId } = useParams();
+  const { courseId, topicId, mode: routeMode } = useParams();
+  const [searchParams] = useSearchParams();
   const { quiz, startQuiz, toggleAnswer, skipQuestion, previousQuestion, nextQuestion } = useQuiz();
   const course = findCourse(courseId);
   const topic = findTopic(courseId, topicId);
   const question = quiz.questions[quiz.currentQuestion];
+  const mode = ["20", "50", "all"].includes(routeMode) ? routeMode : ["20", "50", "all"].includes(searchParams.get("mode")) ? searchParams.get("mode") : "all";
 
   useEffect(() => {
     if (!course || !topic) return;
-    if (quiz.course?.id === courseId && quiz.topic?.id === topicId && quiz.questions.length) return;
-    startQuiz(course, topic, "all");
-  }, [course, courseId, quiz.course?.id, quiz.questions.length, quiz.topic?.id, startQuiz, topic, topicId]);
+    if (quiz.course?.id === courseId && quiz.topic?.id === topicId && quiz.mode === mode && quiz.questions.length) return;
+    startQuiz(course, topic, mode, { replace: true });
+  }, [course, courseId, mode, quiz.course?.id, quiz.mode, quiz.questions.length, quiz.topic?.id, startQuiz, topic, topicId]);
 
   useEffect(() => {
     function handleKeys(event) {

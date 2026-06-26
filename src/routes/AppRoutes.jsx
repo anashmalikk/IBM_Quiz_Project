@@ -10,7 +10,9 @@ export default function AppRoutes() {
       <Route path="/" element={<Home />} />
       <Route path="/course/:courseId" element={<Course />} />
       <Route path="/course/:courseId/topic/:topicId" element={<Quiz />} />
+      <Route path="/course/:courseId/topic/:topicId/:mode" element={<Quiz />} />
       <Route path="/results/:courseId/:topicId" element={<Results />} />
+      <Route path="/results/:courseId/:topicId/:mode" element={<Results />} />
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
   );

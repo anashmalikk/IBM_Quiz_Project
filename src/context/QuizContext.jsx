@@ -20,6 +20,10 @@ const emptyQuiz = {
   results: null
 };
 
+function normalizeMode(mode) {
+  return ["20", "50", "all"].includes(String(mode)) ? String(mode) : "all";
+}
+
 export function QuizProvider({ children }) {
   const navigate = useNavigate();
   const [quiz, setQuiz] = useState(() => readStorage(QUIZ_STATE_KEY, emptyQuiz));
@@ -30,20 +34,21 @@ export function QuizProvider({ children }) {
     writeStorage(QUIZ_STATE_KEY, quiz);
   }, [quiz]);
 
-  const startQuiz = useCallback((course, topic, mode = "all") => {
+  const startQuiz = useCallback((course, topic, mode = "all", options = {}) => {
+    const selectedMode = normalizeMode(mode);
     const shuffled = shuffle(topic.questions);
-    const questions = mode === "all" ? shuffled : shuffled.slice(0, Math.min(Number(mode), shuffled.length));
+    const questions = selectedMode === "all" ? shuffled : shuffled.slice(0, Math.min(Number(selectedMode), shuffled.length));
 
     const nextQuiz = {
       ...emptyQuiz,
       course,
       topic,
       questions,
-      mode
+      mode: selectedMode
     };
 
     setQuiz(nextQuiz);
-    navigate(`/course/${course.id}/topic/${topic.id}`);
+    navigate(`/course/${course.id}/topic/${topic.id}/${selectedMode}`, { replace: Boolean(options.replace) });
   }, [navigate]);
 
   const retryQuiz = useCallback(() => {
@@ -139,8 +144,8 @@ export function QuizProvider({ children }) {
       date: new Date().toLocaleDateString()
     });
     setQuiz((current) => ({ ...current, completed: true, results }));
-    navigate(`/results/${quiz.course.id}/${quiz.topic.id}`);
-  }, [addHistoryEntry, navigate, quiz.course, quiz.questions, quiz.selectedAnswers, quiz.skippedQuestions, quiz.topic]);
+    navigate(`/results/${quiz.course.id}/${quiz.topic.id}/${quiz.mode}`);
+  }, [addHistoryEntry, navigate, quiz.course, quiz.mode, quiz.questions, quiz.selectedAnswers, quiz.skippedQuestions, quiz.topic]);
 
   const nextQuestion = useCallback(() => {
     const question = quiz.questions[quiz.currentQuestion];
