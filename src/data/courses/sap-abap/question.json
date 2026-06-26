@@ -2994,10 +2994,14 @@
     "t": "data_dictionary",
     "q": "TCODE for defining locks? Note: No answer highlighted — likely SE11.",
     "o": [
+      "SE11",
       "SE12"
     ],
-    "a": [],
-    "m": false
+    "a": [
+      0
+    ],
+    "m": false,
+    "comment": "prev ans was \"empty\" and i corrected it by \"0:SE11\". Lock objects are maintained in the ABAP Dictionary; SE11 is the Dictionary maintenance transaction, while SE12 is display-only."
   },
   {
     "t": "data_dictionary",
@@ -3863,13 +3867,15 @@
     "t": "data_dictionary",
     "q": "What is the statement used to load data from table QCMTAB to table QCMBTAB?",
     "o": [
-      "ALTER TABLE ❌",
-      "MOVE-CORRESPONDING ❌",
-      "SELECT ❌",
-      "(Correct statement mentioned in explanation: MOVE-CORRESPONDING)"
+      "ALTER TABLE",
+      "MOVE-CORRESPONDING",
+      "SELECT"
     ],
-    "a": [],
-    "m": false
+    "a": [
+      1
+    ],
+    "m": false,
+    "comment": "prev ans was \"empty\" and i corrected it by \"1:MOVE-CORRESPONDING\". Existing source explanation names MOVE-CORRESPONDING."
   },
   {
     "t": "data_dictionary",
@@ -4272,13 +4278,15 @@
     "t": "data_dictionary",
     "q": "What determines the storage requirements and the access behavior of database tables?",
     "o": [
-      "Internal table types ❌",
-      "Technical settings ❌",
-      "Foreign keys ❌",
-      "(Correct concept from explanation: Technical settings)"
+      "Internal table types",
+      "Technical settings",
+      "Foreign keys"
     ],
-    "a": [],
-    "m": false
+    "a": [
+      1
+    ],
+    "m": false,
+    "comment": "prev ans was \"empty\" and i corrected it by \"1:Technical settings\". Existing source explanation names Technical settings."
   },
   {
     "t": "data_dictionary",
@@ -4296,13 +4304,15 @@
     "t": "data_dictionary",
     "q": "In cluster tables, you store functionally dependent data into one database table. What is the name of the field in the table cluster where the data dependent on the cluster key is stored?",
     "o": [
-      "Cluster data ❌",
-      "Vardata ❌",
-      "Table data ❌",
-      "(Correct answer from explanation: VARDATA)"
+      "Cluster data",
+      "VARDATA",
+      "Table data"
     ],
-    "a": [],
-    "m": false
+    "a": [
+      1
+    ],
+    "m": false,
+    "comment": "prev ans was \"empty\" and i corrected it by \"1:VARDATA\". Existing source explanation names VARDATA."
   },
   {
     "t": "data_dictionary",
@@ -4445,13 +4455,15 @@
     "t": "data_dictionary",
     "q": "Which of the following is a special, table-related function module that is created automatically when you activate a table-related lock object?",
     "o": [
-      "Lock module ❌",
-      "Lock parameter ❌",
-      "Lock object ❌",
-      "(Correct concept: Lock module (ENQUEUE/DEQUEUE FM))"
+      "Lock module",
+      "Lock parameter",
+      "Lock object"
     ],
-    "a": [],
-    "m": false
+    "a": [
+      0
+    ],
+    "m": false,
+    "comment": "prev ans was \"empty\" and i corrected it by \"0:Lock module\". Existing source explanation identifies the generated ENQUEUE/DEQUEUE lock module."
   },
   {
     "t": "data_dictionary",
@@ -4610,9 +4622,18 @@
   {
     "t": "enhancements",
     "q": "Identify the implicit enhancements available in local SAP classes. (All 3 options are correct). At the beginning and end of each method. At the end of the implementation block. Option to create additional importing parameters.",
-    "o": [],
-    "a": [],
-    "m": false
+    "o": [
+      "At the beginning and end of each method",
+      "At the end of the implementation block",
+      "Option to create additional importing parameters"
+    ],
+    "a": [
+      0,
+      1,
+      2
+    ],
+    "m": true,
+    "comment": "prev ans was \"empty\" and i corrected it by \"0:At the beginning and end of each method; 1:At the end of the implementation block; 2:Option to create additional importing parameters\". The source question states all 3 listed options are correct."
   },
   {
     "t": "enhancements",
@@ -4628,9 +4649,17 @@
   {
     "t": "enhancements",
     "q": "You have located a new (Kernel) Business Add-In (BADI) in an SAP standard application. What must you create to implement the BADI, and in which order?",
-    "o": [],
-    "a": [],
-    "m": false
+    "o": [
+      "Enhancement Spot Implementation -> BADI Implementation",
+      "BADI Implementation -> Enhancement Spot Implementation",
+      "BADI Implementation -> Enhancement Project",
+      "Enhancement Project -> BADI Implementation"
+    ],
+    "a": [
+      0
+    ],
+    "m": false,
+    "comment": "prev ans was \"empty\" and i corrected it by \"0:Enhancement Spot Implementation -> BADI Implementation\". For a new/kernel BAdI, create the enhancement spot implementation first, then the BAdI implementation."
   },
   {
     "t": "enhancements",
@@ -5248,8 +5277,11 @@
       "System does not process the request at all",
       "None of the above"
     ],
-    "a": [],
-    "m": false
+    "a": [
+      0
+    ],
+    "m": false,
+    "comment": "prev ans was \"empty\" and i corrected it by \"0:This would trigger an endless loop\". A self-referencing next page without a main window leads to endless page processing."
   },
   {
     "t": "forms",
@@ -5710,11 +5742,14 @@
     "t": "forms",
     "q": "In SmartForms, if a page calls itself as next page, what happens?",
     "o": [
-      "It will be terminated after three pages ⚠",
-      "⚠ Doc says: Terminated after 3 pages | Likely correct: Endless loop — SAP does NOT automatically stop after 3 pages. This creates an infinite loop until a runtime error or timeout."
+      "This would trigger an endless loop",
+      "It will be terminated after three pages"
     ],
-    "a": [],
-    "m": false
+    "a": [
+      0
+    ],
+    "m": false,
+    "comment": "prev ans was \"empty\" and i corrected it by \"0:This would trigger an endless loop\". Corrected the warning-marked source answer to endless loop."
   },
   {
     "t": "forms",
@@ -5901,13 +5936,16 @@
     "t": "forms",
     "q": "Data processing in interactive Adobe Form is on the __________.",
     "o": [
-      "CLIENT side",
+      "Client side",
       "Server side",
       "Both A and B",
       "None of the above"
     ],
-    "a": [],
-    "m": false
+    "a": [
+      0
+    ],
+    "m": false,
+    "comment": "prev ans was \"empty\" and i corrected it by \"0:Client side\". Interactive Adobe form data entry/processing is client-side in Adobe Reader."
   },
   {
     "t": "forms",
@@ -7078,44 +7116,102 @@
   {
     "t": "hana",
     "q": "Q3 — Student selected 'Client ID' (wrong), 'User name' (correct), and 'Logon Language' (correct). Student MISSED 'Host name' and 'Instance number' which are also correct. Result: Partially correct.",
-    "o": [],
-    "a": [],
-    "m": false
+    "o": [
+      "Host name",
+      "Instance number",
+      "Client ID",
+      "User name",
+      "Logon Language"
+    ],
+    "a": [
+      0,
+      1,
+      3,
+      4
+    ],
+    "m": true,
+    "comment": "prev ans was \"empty\" and i corrected it by \"0:Host name; 1:Instance number; 3:User name; 4:Logon Language\". The source text says Host name, Instance number, User name, and Logon Language are correct."
   },
   {
     "t": "hana",
     "q": "Q4 — Student selected 'Package' (wrong) and 'Schema' (correct). Student MISSED 'Table' which is also correct. Result: Partially correct.",
-    "o": [],
-    "a": [],
-    "m": false
+    "o": [
+      "Package",
+      "Schema",
+      "Table",
+      "Calculation View"
+    ],
+    "a": [
+      1,
+      2
+    ],
+    "m": true,
+    "comment": "prev ans was \"empty\" and i corrected it by \"1:Schema; 2:Table\". The source text says Schema and Table are correct."
   },
   {
     "t": "hana",
     "q": "Q6 — Student selected 'Database procedure proxy' (wrong) and 'CDS view' (correct). Student MISSED 'ABAP-managed database procedure'. Result: Partially correct.",
-    "o": [],
-    "a": [],
-    "m": false
+    "o": [
+      "External view",
+      "CDS view",
+      "Database procedure proxy",
+      "ABAP-managed database procedure"
+    ],
+    "a": [
+      1,
+      3
+    ],
+    "m": true,
+    "comment": "prev ans was \"empty\" and i corrected it by \"1:CDS view; 3:ABAP-managed database procedure\". The source text says CDS view and ABAP-managed database procedure are correct."
   },
   {
     "t": "hana",
     "q": "Q8 — Student selected 'Use of secondary database connections' (wrong) and 'Coding that assumes SELECT result is always sorted' (correct). Student MISSED 'Use of native SQL or DB Hints'. Result: Partially correct.",
-    "o": [],
-    "a": [],
-    "m": false
+    "o": [
+      "Use of native SQL or DB Hints",
+      "Use of secondary database connections",
+      "Coding that assumes SELECT result is always sorted",
+      "The existence of customer-specific cluster tables"
+    ],
+    "a": [
+      0,
+      2
+    ],
+    "m": true,
+    "comment": "prev ans was \"empty\" and i corrected it by \"0:Use of native SQL or DB Hints; 2:Coding that assumes SELECT result is always sorted\". The source text says native SQL/DB hints and SELECT-order assumptions are correct."
   },
   {
     "t": "hana",
     "q": "Q12 — Student selected 'Use of SELECT … FOR ALL ENTRIES' and 'Use of SELECT statements in loops' as correct but MISSED 'Use of SELECT * for tables with many fields'. Result: Partially correct.",
-    "o": [],
-    "a": [],
-    "m": false
+    "o": [
+      "Use of SELECT * for tables with many fields",
+      "Use of SELECT ... FOR ALL ENTRIES",
+      "Use of SELECT statements in loops"
+    ],
+    "a": [
+      0,
+      1,
+      2
+    ],
+    "m": true,
+    "comment": "prev ans was \"empty\" and i corrected it by \"0:Use of SELECT * for tables with many fields; 1:Use of SELECT ... FOR ALL ENTRIES; 2:Use of SELECT statements in loops\". The source text says all three listed performance findings are correct."
   },
   {
     "t": "hana",
     "q": "Q13 — Student selected 'Collect runtime data with Runtime Analysis' (wrong) and 'Combine runtime data and static check result in SQL Performance Tuning Worklist' (correct). Missed 'Do static code checks' and 'Collect runtime data with SQL Monitor'. Result: Partially correct.",
-    "o": [],
-    "a": [],
-    "m": false
+    "o": [
+      "Do static code checks",
+      "Collect runtime data with Runtime Analysis",
+      "Collect runtime data with SQL Monitor",
+      "Combine runtime data and static check result in SQL Performance Tuning Worklist"
+    ],
+    "a": [
+      0,
+      2,
+      3
+    ],
+    "m": true,
+    "comment": "prev ans was \"empty\" and i corrected it by \"0:Do static code checks; 2:Collect runtime data with SQL Monitor; 3:Combine runtime data and static check result in SQL Performance Tuning Worklist\". The source text marks Runtime Analysis wrong and lists the other three as correct."
   },
   {
     "t": "hana",
@@ -7153,16 +7249,33 @@
   {
     "t": "hana",
     "q": "Q25 — Student selected incorrect options (points to table / only association). The only correct prerequisite is 'All fields mentioned in the ON condition are part of the field list.' Result: Incorrect.",
-    "o": [],
-    "a": [],
-    "m": false
+    "o": [
+      "All fields mentioned in the ON condition are part of the field list",
+      "The association points to a table",
+      "Only the association is exposed"
+    ],
+    "a": [
+      0
+    ],
+    "m": false,
+    "comment": "prev ans was \"empty\" and i corrected it by \"0:All fields mentioned in the ON condition are part of the field list\". The source text says the only correct prerequisite is that all ON-condition fields are part of the field list."
   },
   {
     "t": "hana",
     "q": "Q26 — Student selected 'In the Data Browser (SE16)' as correct — which is WRONG. Correct places are: Data Preview of ADT, another CDS view, and Open SQL SELECT. MISSED two correct options.",
-    "o": [],
-    "a": [],
-    "m": false
+    "o": [
+      "Data Preview of ADT",
+      "Data Browser (SE16)",
+      "Another CDS view",
+      "Open SQL SELECT"
+    ],
+    "a": [
+      0,
+      2,
+      3
+    ],
+    "m": true,
+    "comment": "prev ans was \"empty\" and i corrected it by \"0:Data Preview of ADT; 2:Another CDS view; 3:Open SQL SELECT\". The source text says ADT Data Preview, another CDS view, and Open SQL SELECT are correct."
   },
   {
     "t": "hana",
@@ -7189,16 +7302,34 @@
   {
     "t": "hana",
     "q": "Q30 — Student selected 'Table names have to be upper-case' (wrong), 'Comma-separated field lists' (correct), and 'Field list after FROM clause is supported' (wrong). Missed 'Key words are not case-sensitive' and 'Identical client handling'. Result: Largely incorrect.",
-    "o": [],
-    "a": [],
-    "m": false
+    "o": [
+      "Table names have to be upper-case",
+      "Comma-separated field lists",
+      "Field list after FROM clause is supported",
+      "Keywords are not case-sensitive",
+      "Identical client handling"
+    ],
+    "a": [
+      1,
+      3,
+      4
+    ],
+    "m": true,
+    "comment": "prev ans was \"empty\" and i corrected it by \"1:Comma-separated field lists; 3:Keywords are not case-sensitive; 4:Identical client handling\". The source text says comma-separated field lists, case-insensitive keywords, and identical client handling are correct."
   },
   {
     "t": "hana",
     "q": "Q32 — Student selected 'Structure types with only scalar components' (wrong) and 'Nested table types without secondary keys' (wrong). MISSED 'Table types with only scalar columns'. Result: Incorrect.",
-    "o": [],
-    "a": [],
-    "m": false
+    "o": [
+      "Structure types with only scalar components",
+      "Nested table types without secondary keys",
+      "Table types with only scalar columns"
+    ],
+    "a": [
+      2
+    ],
+    "m": false,
+    "comment": "prev ans was \"empty\" and i corrected it by \"2:Table types with only scalar columns\". The source text says only table types with scalar columns are correct."
   },
   {
     "t": "hana",
@@ -7214,9 +7345,18 @@
   {
     "t": "hana",
     "q": "Q41 — Student selected 'Database View' (wrong) and 'SQL View' (wrong). Correct proxy objects are 'Procedure Proxy' and 'External View' — both missed.",
-    "o": [],
-    "a": [],
-    "m": false
+    "o": [
+      "Database View",
+      "SQL View",
+      "Procedure Proxy",
+      "External View"
+    ],
+    "a": [
+      2,
+      3
+    ],
+    "m": true,
+    "comment": "prev ans was \"empty\" and i corrected it by \"2:Procedure Proxy; 3:External View\". The source text says Procedure Proxy and External View are correct."
   },
   {
     "t": "hana",
@@ -7232,9 +7372,20 @@
   {
     "t": "hana",
     "q": "Q47 — Student selected 'Database view' and 'CDS view' — both correct — but MISSED 'Transparent table' and 'External view'. The explanation says ALL four are correct data sources for ALV with IDA.",
-    "o": [],
-    "a": [],
-    "m": false
+    "o": [
+      "Database view",
+      "CDS view",
+      "Transparent table",
+      "External view"
+    ],
+    "a": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "m": true,
+    "comment": "prev ans was \"empty\" and i corrected it by \"0:Database view; 1:CDS view; 2:Transparent table; 3:External view\". The source text says all four are correct ALV with IDA data sources."
   },
   {
     "t": "hana",
@@ -7755,9 +7906,15 @@
   {
     "t": "internal_tables",
     "q": "IF itab_test IS INITIAL — this checks whether itab_test has no records: a) TRUE b) FALSE",
-    "o": [],
-    "a": [],
-    "m": false
+    "o": [
+      "TRUE",
+      "FALSE"
+    ],
+    "a": [
+      0
+    ],
+    "m": false,
+    "comment": "prev ans was \"empty\" and i corrected it by \"0:TRUE\". In ABAP, IS INITIAL on an internal table is true when the table has no rows."
   },
   {
     "t": "internal_tables",
@@ -7920,9 +8077,17 @@
   {
     "t": "internal_tables",
     "q": "After a DESCRIBE TABLE statement SY-TFILL will contain: (Repeated) A: The number of rows in the internal table. B: The current OCCURS value. C: Zero, if the table contains one or more rows. D: The length of the internal table row structure.",
-    "o": [],
-    "a": [],
-    "m": false
+    "o": [
+      "The number of rows in the internal table",
+      "The current OCCURS value",
+      "Zero, if the table contains one or more rows",
+      "The length of the internal table row structure"
+    ],
+    "a": [
+      0
+    ],
+    "m": false,
+    "comment": "prev ans was \"empty\" and i corrected it by \"0:The number of rows in the internal table\". SAP ABAP docs state DESCRIBE TABLE fills sy-tfill with the current number of table rows."
   },
   {
     "t": "internal_tables",
@@ -8207,16 +8372,32 @@
   {
     "t": "internal_tables",
     "q": "Which is NOT a true statement about a HASHED internal table type? (Repeated from Q52) A: Its key must always be UNIQUE. B: May only be accessed by its key. C: Response time for accessing a row depends on the number of entries in the table. D: Declared using internal table type HASHED TABLE.",
-    "o": [],
-    "a": [],
-    "m": false
+    "o": [
+      "Its key must always be UNIQUE",
+      "May only be accessed by its key",
+      "Response time for accessing a row depends on the number of entries in the table",
+      "Declared using internal table type HASHED TABLE"
+    ],
+    "a": [
+      2
+    ],
+    "m": false,
+    "comment": "prev ans was \"empty\" and i corrected it by \"2:Response time for accessing a row depends on the number of entries in the table\". Hashed table key access is designed for constant-time key access, so dependency on the number of entries is the false statement."
   },
   {
     "t": "internal_tables",
     "q": "After DESCRIBE TABLE, SY-TFILL will contain: (Repeated) A: The number of rows in the internal table. B: The current OCCURS value. C: Zero, if table contains one or more rows. D: Length of the internal table row structure.",
-    "o": [],
-    "a": [],
-    "m": false
+    "o": [
+      "The number of rows in the internal table",
+      "The current OCCURS value",
+      "Zero, if the table contains one or more rows",
+      "The length of the internal table row structure"
+    ],
+    "a": [
+      0
+    ],
+    "m": false,
+    "comment": "prev ans was \"empty\" and i corrected it by \"0:The number of rows in the internal table\". SAP ABAP docs state DESCRIBE TABLE fills sy-tfill with the current number of table rows."
   },
   {
     "t": "internal_tables",
@@ -13075,10 +13256,13 @@
     "q": "LSMW IS A REUSABLE OBJECT??",
     "o": [
       "TRUE",
-      "LSMW (Legacy System Migration Workbench)"
+      "FALSE"
     ],
-    "a": [],
-    "m": false
+    "a": [
+      0
+    ],
+    "m": false,
+    "comment": "prev ans was \"empty\" and i corrected it by \"0:TRUE\". LSMW objects can be reused within their project/subproject/object structure."
   },
   {
     "t": "data_transfer",
@@ -13119,12 +13303,15 @@
     "q": "For transportation of data from a presentation server into SAP, the function module used is",
     "o": [
       "UPLOAD",
-      "gui_upload",
+      "GUI_UPLOAD",
       "FILE_UPLOAD",
       "DATA_UPLOAD"
     ],
-    "a": [],
-    "m": false
+    "a": [
+      1
+    ],
+    "m": false,
+    "comment": "prev ans was \"empty\" and i corrected it by \"1:GUI_UPLOAD\". GUI_UPLOAD is the standard function module used for uploading local presentation-server files."
   },
   {
     "t": "data_transfer",
@@ -13294,31 +13481,42 @@
     "t": "data_transfer",
     "q": "How do you create a batch input session for a transaction?",
     "o": [
-      "‘Call transaction’ in background mode.",
-      "‘Call transaction’ in error mode.",
-      "‘BDC insert’ for the transaction.",
-      "None of the above."
+      "Call transaction in background mode",
+      "Call transaction in error mode",
+      "BDC_INSERT for the transaction",
+      "None of the above"
     ],
-    "a": [],
-    "m": false
+    "a": [
+      2
+    ],
+    "m": false,
+    "comment": "prev ans was \"empty\" and i corrected it by \"2:BDC_INSERT for the transaction\". BDC_INSERT inserts a transaction into an opened batch input session."
   },
   {
     "t": "data_transfer",
     "q": "GUI_UPLOAD can be used to read data from presentation server in background. Is this statement true or false?",
     "o": [
-      "False"
+      "TRUE",
+      "FALSE"
     ],
-    "a": [],
-    "m": false
+    "a": [
+      1
+    ],
+    "m": false,
+    "comment": "prev ans was \"empty\" and i corrected it by \"1:FALSE\". GUI_UPLOAD depends on the presentation server/frontend and is not suitable for background processing."
   },
   {
     "t": "data_transfer",
     "q": "The return code after asynchronous updating in CALL TRANSACTION METHOD only indicates the success or failure of the transaction, not the update. State whether the statement is true or false. True",
     "o": [
+      "True",
       "False"
     ],
-    "a": [],
-    "m": false
+    "a": [
+      0
+    ],
+    "m": false,
+    "comment": "prev ans was \"empty\" and i corrected it by \"0:True\". The source text itself marks the statement as True."
   },
   {
     "t": "data_transfer",
@@ -13327,11 +13525,13 @@
       "Session Method",
       "Call Transaction",
       "Direct Input",
-      "None of the options are correct",
-      "In Session method, error log will be generated by the system with the details of the error & the description. In call transaction this needs to be done handled explicitly using the structure BDCMSGCOLL, you can declare an internal table to trap the messages with the type BDCMSGCOLL and use FM FORMAT_MESSAGE to get it in to an internal table. FOR SESSION METHOD System maintains implicit error log. You need not to maintain anything for this. If you want to see first execute your BDC with session name any in SM35.after that select session name and click on error log on application bar. YOU can find out all error relevant to your session name."
+      "None of the options are correct"
     ],
-    "a": [],
-    "m": false
+    "a": [
+      0
+    ],
+    "m": false,
+    "comment": "prev ans was \"empty\" and i corrected it by \"0:Session Method\". Session method keeps an implicit/system error log; CALL TRANSACTION requires explicit BDCMSGCOLL handling."
   },
   {
     "t": "data_transfer",
@@ -13354,8 +13554,11 @@
       "BDCDATA",
       "None of the options are correct"
     ],
-    "a": [],
-    "m": false
+    "a": [
+      1
+    ],
+    "m": false,
+    "comment": "prev ans was \"empty\" and i corrected it by \"1:BDCMSGCOLL\". CALL TRANSACTION message/error collection uses BDCMSGCOLL."
   },
   {
     "t": "data_transfer",
@@ -13364,22 +13567,28 @@
       "Load module",
       "Call transaction",
       "BAPI",
-      "I doc segment"
+      "IDoc segment"
     ],
-    "a": [],
-    "m": false
+    "a": [
+      1
+    ],
+    "m": false,
+    "comment": "prev ans was \"empty\" and i corrected it by \"1:Call transaction\". CALL TRANSACTION is the classic alternative BDC method to session processing."
   },
   {
     "t": "data_transfer",
     "q": "A BDC program is used for all the following except:",
     "o": [
-      "A: Downloading data to a local file",
-      "B: Data interfaces between SAP and external systems",
-      "C: Initial data transfer",
-      "D: Entering a large amount of data"
+      "Downloading data to a local file",
+      "Data interfaces between SAP and external systems",
+      "Initial data transfer",
+      "Entering a large amount of data"
     ],
-    "a": [],
-    "m": false
+    "a": [
+      0
+    ],
+    "m": false,
+    "comment": "prev ans was \"empty\" and i corrected it by \"0:Downloading data to a local file\". BDC is for entering/uploading transaction data, not downloading local files."
   },
   {
     "t": "data_transfer",
@@ -13388,8 +13597,11 @@
       "True",
       "False"
     ],
-    "a": [],
-    "m": false
+    "a": [
+      0
+    ],
+    "m": false,
+    "comment": "prev ans was \"empty\" and i corrected it by \"0:True\". CALL DIALOG is not one of the standard BDC methods."
   },
   {
     "t": "data_transfer",
@@ -13401,9 +13613,17 @@
   {
     "t": "data_transfer",
     "q": "Which of the following is not a DATASET Statement? Choose from the options given. OPEN DATASET CLOSE DATASET DELETE DATASET WRITE DATASET",
-    "o": [],
-    "a": [],
-    "m": false
+    "o": [
+      "OPEN DATASET",
+      "CLOSE DATASET",
+      "DELETE DATASET",
+      "WRITE DATASET"
+    ],
+    "a": [
+      3
+    ],
+    "m": false,
+    "comment": "prev ans was \"empty\" and i corrected it by \"3:WRITE DATASET\". ABAP uses TRANSFER for writing to a dataset; WRITE DATASET is not the statement."
   },
   {
     "t": "data_transfer",
@@ -13414,8 +13634,11 @@
       "Presentation server",
       "Message server"
     ],
-    "a": [],
-    "m": false
+    "a": [
+      0
+    ],
+    "m": false,
+    "comment": "prev ans was \"empty\" and i corrected it by \"0:Application server\". OPEN DATASET works with application-server files."
   },
   {
     "t": "data_transfer",
@@ -13440,13 +13663,16 @@
     "t": "data_transfer",
     "q": "What does the mode ‘E’ clause in the CALL TRANSACTION USING statement signify?",
     "o": [
-      "• It signifies “Visualize screens with the Error log”.",
-      "• It signifies “Visualize screens only if there is an error”.",
-      "• It signifies “Visualize screens with if there is no error”.",
-      "• None of the above."
+      "Visualize all screens",
+      "Visualize screens only if there is an error",
+      "Do not visualize screens",
+      "None of the above"
     ],
-    "a": [],
-    "m": false
+    "a": [
+      1
+    ],
+    "m": false,
+    "comment": "prev ans was \"empty\" and i corrected it by \"1:Visualize screens only if there is an error\". CALL TRANSACTION MODE E displays screens only if an error occurs."
   },
   {
     "t": "data_transfer",
@@ -13496,21 +13722,27 @@
       "/nquit",
       "/exit"
     ],
-    "a": [],
-    "m": false
+    "a": [
+      1
+    ],
+    "m": false,
+    "comment": "prev ans was \"empty\" and i corrected it by \"1:/bend\". The /bend command exits batch input session processing."
   },
   {
     "t": "data_transfer",
     "q": "Which one of the following is an example of an asynchronous update?",
     "o": [
-      "Modify ZTABLE from WA.",
-      "Update ZTABLE set field1 = '123'.",
-      "Update ZTABLE from ZTABLE.",
+      "Modify ZTABLE from WA",
+      "Update ZTABLE set field1 = 123",
+      "Update ZTABLE from ZTABLE",
       "Insert WA into ZTABLE",
-      "Call function 'UPDATE_TABLE' in update task"
+      "CALL FUNCTION ... IN UPDATE TASK"
     ],
-    "a": [],
-    "m": false
+    "a": [
+      4
+    ],
+    "m": false,
+    "comment": "prev ans was \"empty\" and i corrected it by \"4:CALL FUNCTION ... IN UPDATE TASK\". IN UPDATE TASK registers an update function module for asynchronous update processing."
   },
   {
     "t": "data_transfer",
@@ -13519,10 +13751,13 @@
       "BDC",
       "LSMW",
       "Direct table update",
-      "∙ I docs"
+      "IDocs"
     ],
-    "a": [],
-    "m": false
+    "a": [
+      1
+    ],
+    "m": false,
+    "comment": "prev ans was \"empty\" and i corrected it by \"1:LSMW\". LSMW is the standard legacy migration workbench for one-time high-volume uploads."
   },
   {
     "t": "data_transfer",
@@ -13533,8 +13768,11 @@
       "APQQ",
       "APQI"
     ],
-    "a": [],
-    "m": false
+    "a": [
+      3
+    ],
+    "m": false,
+    "comment": "prev ans was \"empty\" and i corrected it by \"3:APQI\". APQI stores batch input session queue information."
   },
   {
     "t": "data_transfer",
@@ -13593,9 +13831,17 @@
   {
     "t": "data_transfer",
     "q": "Which program can be used to release BDC sessions within a job? Choose from the options given. RSBDCSUB RSBDCJOB RSSUBBDC BDCRECXX",
-    "o": [],
-    "a": [],
-    "m": false
+    "o": [
+      "RSBDCSUB",
+      "RSBDCJOB",
+      "RSSUBBDC",
+      "BDCRECXX"
+    ],
+    "a": [
+      0
+    ],
+    "m": false,
+    "comment": "prev ans was \"empty\" and i corrected it by \"0:RSBDCSUB\". RSBDCSUB is the standard report used to process/release batch input sessions in background jobs."
   },
   {
     "t": "final",
